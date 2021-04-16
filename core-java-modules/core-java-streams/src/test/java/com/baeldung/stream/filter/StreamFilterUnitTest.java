@@ -90,10 +90,10 @@ public class StreamFilterUnitTest {
 
     @Test
     public void givenListOfCustomers_whenFilterWithCustomHandling_thenThrowException() {
-        Customer john = new Customer("John P.", 15, "https://images.unsplash.com/photo-1543320485-d0d5a49c2b2e");
+        Customer john = new Customer("John P.", 15, "https://confluence.zurich.com/download/attachments/20251477/user-avatar");
         Customer sarah = new Customer("Sarah M.", 200);
         Customer charles = new Customer("Charles B.", 150);
-        Customer mary = new Customer("Mary T.", 1, "https://images.unsplash.com/photo-1543297057-25167dfc180e");
+        Customer mary = new Customer("Mary T.", 1, "https://confluence.zurich.com/download/attachments/20251480/user-avatar");
         List<Customer> customers = Arrays.asList(john, sarah, charles, mary);
 
         assertThatThrownBy(() -> customers
@@ -104,10 +104,10 @@ public class StreamFilterUnitTest {
 
     @Test
     public void givenListOfCustomers_whenFilterWithThrowingFunction_thenThrowException() {
-        Customer john = new Customer("John P.", 15, "https://images.unsplash.com/photo-1543320485-d0d5a49c2b2e");
+        Customer john = new Customer("John P.", 15, "https://confluence.zurich.com/download/attachments/20251477/user-avatar");
         Customer sarah = new Customer("Sarah M.", 200);
         Customer charles = new Customer("Charles B.", 150);
-        Customer mary = new Customer("Mary T.", 1, "https://images.unsplash.com/photo-1543297057-25167dfc180e");
+        Customer mary = new Customer("Mary T.", 1, "https://confluence.zurich.com/download/attachments/20251480/user-avatar");
         List<Customer> customers = Arrays.asList(john, sarah, charles, mary);
 
         assertThatThrownBy(() -> customers
@@ -118,10 +118,10 @@ public class StreamFilterUnitTest {
 
     @Test
     public void givenListOfCustomers_whenFilterWithTryCatch_thenGetTwo() {
-        Customer john = new Customer("John P.", 15, "https://images.unsplash.com/photo-1543320485-d0d5a49c2b2e");
+        Customer john = new Customer("John P.", 15, "https://confluence.zurich.com/download/attachments/20251477/user-avatar");
         Customer sarah = new Customer("Sarah M.", 200);
         Customer charles = new Customer("Charles B.", 150);
-        Customer mary = new Customer("Mary T.", 1, "https://images.unsplash.com/photo-1543297057-25167dfc180e");
+        Customer mary = new Customer("Mary T.", 1, "https://confluence.zurich.com/download/attachments/20251480/user-avatar");
         List<Customer> customers = Arrays.asList(john, sarah, charles, mary);
 
         List<Customer> customersWithValidProfilePhoto = customers
@@ -142,8 +142,8 @@ public class StreamFilterUnitTest {
 
     @Test
     public void givenListOfCustomers_whenFilterWithTryCatchAndRuntime_thenThrowException() {
-        List<Customer> customers = Arrays.asList(new Customer("John P.", 15, "https://images.unsplash.com/photo-1543320485-d0d5a49c2b2e"), new Customer("Sarah M.", 200), new Customer("Charles B.", 150),
-          new Customer("Mary T.", 1, "https://images.unsplash.com/photo-1543297057-25167dfc180e"));
+        List<Customer> customers = Arrays.asList(new Customer("John P.", 15, "https://confluence.zurich.com/download/attachments/20251477/user-avatar"), new Customer("Sarah M.", 200), new Customer("Charles B.", 150),
+          new Customer("Mary T.", 1, "https://confluence.zurich.com/download/attachments/20251480/user-avatar"));
 
         assertThatThrownBy(() -> customers
           .stream()
