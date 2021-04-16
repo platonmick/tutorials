@@ -48,6 +48,7 @@ public class Java8StreamApiUnitTest {
             return element.substring(0, 3);
         }).count();
         assertEquals(1, counter);
+        assertEquals(1, sizeFirst);
 
         counter = 0;
         long sizeSecond = list.stream().map(element -> {
@@ -55,6 +56,7 @@ public class Java8StreamApiUnitTest {
             return element.substring(0, 3);
         }).skip(2).count();
         assertEquals(3, counter);
+        assertEquals(1, sizeSecond);
     }
 
     @Test
