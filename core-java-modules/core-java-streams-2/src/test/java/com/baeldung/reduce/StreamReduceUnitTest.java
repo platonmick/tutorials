@@ -73,7 +73,7 @@ public class StreamReduceUnitTest {
     }
 
     @Test
-    public void givenStream_whneCalleddivideListElementsWithApplyFunctionMethod_thenCorrect() {
+    public void givenStream_whenCalleddivideListElementsWithApplyFunctionMethod_thenCorrect() {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
         assertThat(NumberUtils.divideListElementsWithApplyFunctionMethod(numbers, 1)).isEqualTo(21);
     }
