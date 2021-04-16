@@ -33,7 +33,7 @@ public class Customer {
     }
 
     public boolean hasOverHundredPoints() {
-        return this.points > 100;
+        return this.hasOver(100);
     }
 
     public boolean hasValidProfilePhoto() throws IOException {
